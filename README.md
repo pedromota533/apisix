@@ -4,15 +4,8 @@ Apache APISIX API Gateway on Kubernetes, deployed via ArgoCD.
 
 ## Deployment
 
-Apply the ArgoCD application manifests:
-
-```bash
-kubectl apply -f namespace.yaml
-kubectl apply -f argocd-application.yaml
-kubectl apply -f services.yaml
-```
-
-ArgoCD will automatically sync and deploy APISIX and the Dashboard from the Helm charts.
+ArgoCD application manifest lives in `../argocd/apisix-app.yaml`.
+ArgoCD reads this repo automatically and deploys APISIX and the Dashboard from the Helm charts.
 
 ## Endpoints
 
@@ -42,8 +35,6 @@ ArgoCD will automatically sync and deploy APISIX and the Dashboard from the Helm
 
 | File                     | Role                                                     |
 |--------------------------|----------------------------------------------------------|
-| `argocd-application.yaml`| ArgoCD Application manifests for APISIX and Dashboard    |
-| `kind-cluster.yaml`      | Kind cluster config with port mappings                   |
 | `values.yaml`            | Helm overrides for APISIX (admin credentials)            |
 | `services.yaml`          | NodePort services that expose pods outside the cluster   |
 | `namespace.yaml`         | Namespace definition for APISIX                          |

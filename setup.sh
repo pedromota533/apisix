@@ -79,7 +79,7 @@ echo "==> APISIX services:"
 "$KUBECTL" get svc -n apisix
 
 echo ""
-echo "==> APISIX Gateway:    http://localhost:80"
-echo "==> APISIX Admin API:  http://localhost:9180"
-echo "==> APISIX Dashboard:  http://localhost:9000"
+echo "==> APISIX Gateway:    http://localhost:30080"
+echo "==> APISIX Admin API:  http://localhost:39180"
+echo "==> APISIX Dashboard:  http://localhost:39000"
 echo "    Dashboard login: admin / admin"

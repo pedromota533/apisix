@@ -22,8 +22,8 @@ ArgoCD reads this repo automatically and deploys APISIX and the Dashboard from t
 |---------------|-------------|-----------------|
 | 80            | 30080       | Gateway HTTP    |
 | 443           | 30443       | Gateway HTTPS   |
-| 9180          | 39180       | Admin API       |
-| 9000          | 39000       | Dashboard       |
+| 9180          | 30180       | Admin API       |
+| 9000          | 30000       | Dashboard       |
 
 ## Prerequisites
 

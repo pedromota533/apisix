@@ -32,7 +32,7 @@ spec:
     - name: admin
       port: 9180
       targetPort: 9180
-      nodePort: 39180
+      nodePort: 30180
       protocol: TCP
 ---
 apiVersion: v1
@@ -48,5 +48,5 @@ spec:
     - name: dashboard
       port: 9000
       targetPort: 9000
-      nodePort: 30900
+      nodePort: 30000
       protocol: TCP

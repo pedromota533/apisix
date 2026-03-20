@@ -13,8 +13,8 @@ ArgoCD reads this repo automatically and deploys APISIX and the Dashboard from t
 |---------------|---------------------------|-----------------|
 | Gateway HTTP  | http://localhost:30080     | —               |
 | Gateway HTTPS | https://localhost:30443    | —               |
-| Admin API     | http://localhost:39180     | —               |
-| Dashboard     | http://localhost:39000     | admin / admin   |
+| Admin API     | http://localhost:30180     | —               |
+| Dashboard     | http://localhost:30000     | admin / admin   |
 
 ## Port Mapping
 
